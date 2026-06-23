@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Google Sans", sans-serif;
+    background-color:#ededed;
+    margin: 0;
+
+}
+
+header{
+    background: linear-gradient(#000,#fff);
+    margin-bottom: 0;
+}
+.profile_img {
+    display: block;
+    margin:auto;
+}
+figcaption{
+    text-align: center;
+    color: #fff;
+}
+
+nav ul{
+    list-style: none;
+    padding: 10px 20px;
+}
+.header_nav li{
+    padding: 5px 5px;
+}
+.header_nav a{
+    text-decoration: none;
+}
+h1{
+    font-size: 2.4rem;
+    text-align: center;
+    padding-top: 20px;
+}
+
+img{
+    padding-top: 20px;
+    height:300px;
+    width:300px;
+}
+main{
+    background: linear-gradient(#fff,#000);
+}
+main > section{
+    padding: 10px 0;
+}
+.redes_list li{
+    color:#48ef;
+}
+
+h2{
+    color:#48ef;
+    margin: auto;
+}
+
+.footer{
+    background-color: #000;
+    color:#fffd;
+    padding:20px;
+    margin-top: 10px;
+    font-size: 0.6rem;
+}
+
+/* INDEX  EDICION*/
+
+.section_futuro-principal,.section_description-principal{
+     margin: 0 20px;  
+}
+.section_futuro-principal{
+    padding-bottom:40px;
+}
+.subtitle_principal{
+    color:rgb(47, 59, 78)
+}
+.main_principal p {
+    font-size: 0.7rem;
+    color: #fff;
+}
+.footer_principal li{
+    color: #fffd;
+    list-style: none;
+    margin-left: 0;
+    padding: 2px;
+}
+
+/* SERVICIOS EDICION  */
+
+.main_servicios h2{
+     color:rgb(116, 121, 131);
+}
+.main_servicios p{
+    color:#fff;
+     font-size: 0.7rem;
+}
+.section_description-servicios{
+    padding: 20px;
+    margin: 0 20px;
+}
+.section_description-servicios img{
+    display: block;
+    margin: auto;
+}
+
+/* SOBRE MI EDICION  */
+
+.section_description-sobre-mi{
+    padding: 20px;
+    margin: 0 20px;
+}
+.section_description-sobre-mi h2{
+     color:rgb(116, 121, 131)
+}
+.section_description-sobre-mi p{
+    color:#fff;
+    font-size: 0.7rem;
+}
+
+/* PROYECTOS EDICION*/
+
+.section_futuro-proyectos h2{
+    color:rgb(116, 121, 131);
+
+}
+.main_proyectos p{
+    color:#fff;
+    font-size: 0.7rem;
+}
+
+/* CONTACTO EDICION  */
+
+.section_futuro-contacto h2, .section_futuro-contacto h3{
+    color:rgb(116, 121, 131);
+    margin-right: 300px;
+}
+.section_futuro-contacto{
+    padding: 20px;
+    margin: 0 20px;
+}
+.main_contacto p{
+    color:#fff;
+    font-size: 0.7rem;
+}
+.redes_list-contacto li{
+    color: #fff;
+    list-style: none;
+    padding: 2px;
+}
