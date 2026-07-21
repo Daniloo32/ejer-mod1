@@ -9,7 +9,13 @@ body{
     background-color:#ededed;
     margin: 0;
     box-sizing: border-box;
-
+    display: grid;
+     grid-template-columns:1fr;
+     grid-template-rows: auto;
+     grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
 }
  p{
     color:#fff;
@@ -17,6 +23,10 @@ body{
 }
 
 /*  HEADER  */
+
+.header{
+    grid-area: header;
+}
 
 .header_nav{
     position: sticky;
@@ -47,7 +57,11 @@ body{
     background-color:rgb(138, 143, 212);
 }
 
-
+.nav_list{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
 
 
 figcaption{
@@ -69,16 +83,41 @@ h1{
     padding-top: 20px;
 }
 
+/*  SIDEBAR  */
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.1);
+}
+
+.sidebar h2,
+.sidebar h3 {
+  color: #333;
+  margin-top: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 10px 0;
+}
+
 /*  MAIN  */
 
 main{
-    height: 900px;
     background: linear-gradient(#fff,#000);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     text-align: center;
+    grid-area: main;
 }
 main > section{
     padding: 10px 0;
@@ -104,6 +143,7 @@ main > section{
     justify-content: center;
     align-items: center;
     border-top: 1px solid #ededed;
+    grid-area: footer;
 }
 
 
@@ -161,7 +201,6 @@ main > section{
 
 .section_futuro-contacto h2{
     color:rgb(40, 47, 63);
-    margin-right: 300px;
 }
 section > h3{
     color: rgb(101, 118, 158);
@@ -175,4 +214,24 @@ section > h3{
     color: #fff;
     list-style: none;
     padding: 2px;
+}
+
+/*  MEDIA QUERIES */
+
+@media (max-width: 840px){
+    body{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "sidebar"
+            "main"
+            "footer";
+    }
+}
+
+@media (max-width:840px){
+    .nav_list{
+        flex-direction:column;
+        align-items:center;
+    }
 }
