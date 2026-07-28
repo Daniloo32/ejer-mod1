@@ -25,7 +25,7 @@ body{
 
 /*  HEADER  */
 
-.header{
+header{
     grid-area: header;
 }
 
@@ -127,6 +127,12 @@ main > section{
     padding: 10px 0;
 }
 
+.section_description{
+    padding: 20px;
+    margin: 0 20px;
+     color:rgb(40, 47, 63);
+}
+
 .section-img{
     width: 300px;
     height: 300px;
@@ -143,7 +149,7 @@ main > section{
 
 /*  FOOTER */
 
-.footer{
+footer{
     background-color: #000;
     color:#fffd;
     padding:20px;
@@ -161,7 +167,7 @@ main > section{
 /* INDEX  EDICION*/
 
 
-.section_futuro-principal,.section_description-principal{
+.section_futuro-principal{
      margin: 0 20px;  
 }
 .section_futuro-principal{
@@ -171,7 +177,6 @@ main > section{
     color:rgb(47, 59, 78)
 }
 .footer_principal {
-    color: #fffd;
     list-style: none;
     margin-left: 0;
     padding-top: 10px;
@@ -187,38 +192,16 @@ main > section{
      color:rgb(40, 47, 63);
 }
 
-.section_description-servicios{
-    padding: 20px;
-    margin: 0 20px;
-}
-
 /* SOBRE MI EDICION  */
 
-.section_description-sobre-mi{
-    padding: 20px;
-    margin: 0 20px;
-}
-.section_description-sobre-mi h2{
-     color:rgb(40, 47, 63);
-}
 
 /* PROYECTOS EDICION*/
 
-.section_futuro-proyectos h2{
-    color:rgb(40, 47, 63);
-}
 
 /* CONTACTO EDICION  */
 
-.section_futuro-contacto h2{
-    color:rgb(40, 47, 63);
-}
 section > h3{
     color: rgb(101, 118, 158);
-}
-.section_futuro-contacto{
-    padding: 20px;
-    margin: 0 20px;
 }
 
 .redes_list-contacto li{
