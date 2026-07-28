@@ -9,7 +9,14 @@ body{
     background-color:#ededed;
     margin: 0;
     box-sizing: border-box;
-    display: grid;
+}
+ p{
+    color:#fff;
+    font-size: 0.75rem;
+}
+
+.container{
+        display: grid;
     grid-template-columns: 1fr;
         grid-template-areas:
             "header"
@@ -17,10 +24,6 @@ body{
             "main"
             "footer";
     gap: 10px;
-}
- p{
-    color:#fff;
-    font-size: 0.75rem;
 }
 
 /*  HEADER  */
@@ -186,34 +189,19 @@ footer{
     align-items: center;
 }
 
-/* SERVICIOS EDICION  */
-
-.main_servicios h2{
-     color:rgb(40, 47, 63);
-}
-
-/* SOBRE MI EDICION  */
-
-
-/* PROYECTOS EDICION*/
-
 
 /* CONTACTO EDICION  */
 
-section > h3{
-    color: rgb(101, 118, 158);
-}
-
 .redes_list-contacto li{
-    color: #fff;
+    color: #fffd;
     list-style: none;
-    padding: 2px;
+    padding: 4px;
 }
 
 /*  MEDIA QUERIES */
 
 @media (min-width: 480px){
-    body{
+    .container{
          grid-template-columns:  1fr 1fr;
      grid-template-rows: auto;
      grid-template-areas:
@@ -233,7 +221,7 @@ section > h3{
 }
 
 @media (min-width: 1024px){
-    body{
+    .container{
         grid-template-columns: 0.5fr 1fr;
         grid-template-rows: auto;
         grid-template-areas:
