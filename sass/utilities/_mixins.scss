@@ -1,0 +1,25 @@
+@mixin flex($direccion, $justify, $align) {
+  display: flex;
+  flex-direction: $direccion;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin radius($radio) {
+  border-radius: $radio;
+}
+
+@mixin gradient($color1, $color2) {
+  background: linear-gradient(135deg, $color1, $color2);
+}
+
+@mixin grid($columnas, $areas, $gap) {
+  display: grid;
+  grid-template-columns: $columnas;
+  grid-template-areas: $areas;
+  gap: $gap;
+}
+
+@mixin animation($nombre, $duracion, $timing, $delay, $fill) {
+  animation: $nombre $duracion $timing $delay $fill;
+}

@@ -1,0 +1,36 @@
+ @use "../utilities/mixins"as*;
+ @use "../components/variables"as*;
+
+/*  MEDIA QUERIES */
+
+@media (min-width: 480px){
+    .layout {
+  @include grid(
+    1fr 1fr,
+    "header header"
+    "sidebar sidebar"
+    "main main"
+    "footer footer",
+    5px 10px,
+  );
+}
+}
+
+@media (min-width: 480px){
+    .nav_list{
+        flex-direction:column;
+        align-items:center;
+    }
+}
+
+@media (min-width: 1024px){
+    .layout{
+          @include grid(
+    0.5fr 1fr,
+    "header header"
+    "sidebar main"
+    "footer footer",
+    5px 10px,
+  );
+    }
+}

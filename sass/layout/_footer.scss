@@ -1,0 +1,21 @@
+ @use "../components/variables"as*;
+@use "../utilities/mixins"as*;
+
+/*FOOTER*/
+
+footer{
+     @include flex(column, center, center);
+    background-color:$colorSecondary;
+    color: $colorPrimary;
+    padding:20px;
+    margin-top:0;
+    font-size: 0.6rem;
+    border-top: 1px solid $bgSecondary;
+    grid-area: footer;
+}
+ .footer_principal{
+    @include flex(row, space-around, center);
+    list-style: none;
+    margin-left: 0;
+    padding-top: 10px;
+    }

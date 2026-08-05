@@ -1,0 +1,11 @@
+ @use "../components/variables"as*;
+
+/* CONTACTO EDICION  */
+
+.redes_list-contacto li{
+    color: $colorPrimary;
+    font-family:  'Helvetica';
+    font-weight: bold;
+    list-style: none;
+    padding: 4px;
+}

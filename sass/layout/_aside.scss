@@ -1,0 +1,23 @@
+ @use "../components/variables"as*;
+  @use "../utilities/mixins"as*;
+/*ASIDE*/
+
+ .sidebar{
+  grid-area: sidebar;
+  background-color: $bgSecondary;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.1);
+  padding-bottom: 100px;
+  @include radius(8px);
+  h2,h3{
+    color: $colorSubtitle;
+  margin-top: 20px;
+  }
+  ul{
+  list-style: none;
+  padding: 0;
+  }
+  li{
+      margin: 10px 0;
+  }
+    }

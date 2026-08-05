@@ -5,9 +5,13 @@
 //NESTING
 
 
-@use "./generales/reset";
-@use "./generales/headerFooter";
-@use "./generales/mainAside";
-@use "./page/contacto";
-@use "./generales/mediaQ";
-@use "./generales/variables"
+@use "./base/reset";
+@use "./layout/header";
+@use "./layout/aside";
+@use "./layout/section";
+@use "./layout/footer";
+@use "./layout/tarjeta";
+@use "./base/contacto";
+@use "./components/variables";
+@use "./base/mediaQ";
+@use "./utilities/mixins";
