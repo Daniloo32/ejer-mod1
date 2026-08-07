@@ -10,7 +10,7 @@
   padding-bottom: 100px;
   @include radius(8px);
   h2,h3{
-    color: $colorSubtitle;
+  color: $colorSubtitle;
   margin-top: 20px;
   }
   ul{
@@ -21,3 +21,16 @@
       margin: 10px 0;
   }
     }
+  /*PAGINA PRINCIPAL*/
+.list-principal, .lista-iconos{
+    padding: 0;
+    margin: 0;
+    li{
+        margin: 10px 0;
+        color: $colorSecondary;
+        font-size: 1rem;
+        strong{
+            color: $colorSubtitle;
+        }
+    }
+}

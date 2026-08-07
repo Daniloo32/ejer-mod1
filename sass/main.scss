@@ -9,9 +9,10 @@
 @use "./layout/header";
 @use "./layout/aside";
 @use "./layout/section";
-@use "./layout/footer";
 @use "./layout/tarjeta";
+@use "./layout/proyectos";
 @use "./base/contacto";
-@use "./components/variables";
+@use "./layout/footer";
 @use "./base/mediaQ";
 @use "./utilities/mixins";
+@use "./components/variables";

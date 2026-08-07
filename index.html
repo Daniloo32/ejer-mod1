@@ -3,13 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estructura semantica</title>
+    <meta name="description" content="Portafolio profesional de Danilo Aquino, desarrollador web en formación y estudiante de Analista Programador en la UAI. Conoce mis proyectos, habilidades y tecnologías de desarrollo web.">
+    <title>Danilo Aquino Desarrollador Web</title>
 
     <!-- Bootstrap CSS -->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
+                <!-- Libreria Animations -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
                <!-- CSS DONDE COMPILA SASS-->
     <link rel="stylesheet" href="styles/estilos.css">
+
+    <!-- Iconify Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
 <body>  
@@ -31,7 +38,7 @@
              <a class="nav-link" href="pages/preguntas.html">Preguntas Personales</a>
            </li>
            <li class="nav-item">
-             <a class="nav-link" href="pages/proyectos.html">Proyectos</a>
+             <a class="nav-link" href="pages/proyectos.html">Ver proyectos</a>
            </li>
             <li class="nav-item">
              <a class="nav-link" href="pages/servicios.html">Servicios</a>
@@ -45,41 +52,37 @@
    </nav>
 
     </header>
-    
+                <!-- Barra lateral e informacion sobre mi stack-->
          <aside class="sidebar">
-       <h2>Información Personal</h2>
-       <p>¡Hola! Soy un estudiante de Analista Programador de 21 años, de Buenos Aires. Me apasiona la tecnología y el desarrollo de software. Actualmente estoy ampliando mis conocimientos en programación, creando proyectos para mejorar mis habilidades y prepararme para mi primera experiencia laboral como desarrollador.</p>
-       <ul>
+
+       <h2 class="animate__animated  animate__bounce">Información Personal</h2>
+
+       <p>¡Hola! Soy un desarrollador web en formación y estudiante de la Universidad Abierta Interamericana (UAI), donde curso la carrera de Analista Programador. Me apasiona la tecnología y el desarrollo de soluciones digitales que combinen funcionalidad, rendimiento y una excelente experiencia de usuario.Actualmente estoy ampliando mis conocimientos en programación, creando proyectos para mejorar mis habilidades y prepararme para mi primera experiencia laboral como desarrollador.</p>
+
+       <ul class="list-principal">
          <li><strong>Nombre:</strong> Danilo Aquino</li>
          <li><strong>Edad:</strong> 21 años</li>
          <li><strong>Ciudad:</strong> Buenos Aires</li>
          <li><strong>Profesión:</strong> Desarrollador Web</li>
        </ul>
-     
-       <h3>Habilidades</h3>
-       <ul>
-         <li>HTML</li>
-         <li>CSS</li>
-         <li>JavaScript</li>
-         <li>Git</li>
-       </ul>
-     </aside>
 
-    <main>
-        <section class="section_description section_description-principal">
-            <h1>HOLA ¡Soy Danilo!</h1>
-            <h2 class="subtitle_principal">Desarrollador Web</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam assumenda reiciendis, repellendus exercitationem minima quos rem ut totam debitis eveniet magni excepturi recusandae accusantium fugiat est architecto eligendi error. Totam.</p>
-             <h2 class="subtitle_principal">¿Que vas a encontrar?</h2>
-             <article><p>Una reseña de mi trabajo,mi formacion,mis habilidades y la forma de contactarme. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eveniet voluptatibus ipsa enim? Sapiente veniam repellendus perferendis molestias consectetur, dicta, numquam esse non vero commodi dolores enim velit doloribus dolore?</p></article>
-             <div class="section-img">
-                <img src="images/cv.jpeg" alt="Cv del desarrollador Danilo Aquino">
-             </div>
-        </section>
+       <div class="stack-tecnologico">
 
-        <section class="tarjeta-presentacion">
+  <h2 class="subtitle_principal">Mi Stack</h2>
+
+  <ul class="lista-iconos">
+    <li><i class="fa-brands fa-html5" aria-hidden="true"></i> HTML5</li>
+    <li><i class="fa-brands fa-css3-alt" aria-hidden="true"></i> CSS3</li>
+    <li><i class="fa-brands fa-js" aria-hidden="true"></i> JavaScript</li>
+    <li><i class="fa-brands fa-git-alt" aria-hidden="true"></i> Git</li>
+     <li><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</li>
+  </ul>
+
+</div>
+         <section class="tarjeta-presentacion">
   <div class="tarjeta">
     <div class="tarjeta-inner">
+
       <!-- Cara frontal -->
       <div class="tarjeta-front">
         <h3>Danilo Aquino</h3>
@@ -91,29 +94,152 @@
       <div class="tarjeta-back">
         <h3>Contacto</h3>
         <ul class="tarjeta-contacto">
-          <li>📧 aquinodanilo00@gmail.com</li>
-          <li>📱 +54 11 6941-0036</li>
+          <li><a href="mailto:aquinodanilo00@gmail.com">📧 aquinodanilo00@gmail.com</a></li>
+          <li><a href="tel:+5491169410036">📱 +54 11 6941-0036</a></li>
           <li>🌐 www.miportafolio.com</li>
+          <li> <a href="https://github.com/Daniloo32" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a></li>
         </ul>
+
         <div class="tarjeta-redes">
-          <a href="#" aria-label="Instagram">📸</a>
-          <a href="#" aria-label="Twitter">🐦</a>
-          <a href="#" aria-label="Facebook">📘</a>
+          <a href="https://www.instagram.com/dani.aquino_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://twitter.com/daniloo22" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.facebook.com/daniloo22" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
         </div>
+
       </div>
     </div>
   </div>
 </section>
+     </aside>
+
+    <main>
+               <!-- Sección de descripción principal -->
+
+        <section class="section_description section_description-principal">
+            <h1>HOLA ¡Soy Danilo!</h1>
+            <h2 class="subtitle_principal">Desarrollador Web</h2>
+            <p>Me especializo en el desarrollo de aplicaciones y sitios web utilizando tecnologías modernas del ecosistema web, aplicando buenas prácticas de programación, diseño responsivo y optimización del rendimiento. Cuento con experiencia en el desarrollo de interfaces con HTML, CSS y JavaScript, además del uso de frameworks y herramientas actuales para construir aplicaciones dinámicas, escalables y mantenibles. Me caracterizo por ser una persona responsable, proactiva y orientada a la resolución de problemas. Disfruto aprender nuevas tecnologías, afrontar desafíos y trabajar en equipo para desarrollar soluciones innovadoras que aporten valor a los usuarios y a las organizaciones.
+            Mi objetivo es continuar fortaleciendo mis conocimientos técnicos y profesionales, adquirir experiencia en proyectos de alto impacto y desarrollarme como un profesional capaz de aportar soluciones de calidad en el ámbito del desarrollo de software.</p>
+            </section>
+
+
+              <!-- Sección de proyectos destacados -->
+
+<section class="section_proyectos">
+  <h2 class="subtitle_principal">Proyectos Destacados</h2>
+  <p class="proyectos-intro">Algunos de los trabajos en los que apliqué lo aprendido.</p>
+
+  <div class="proyectos-grid">
+
+    <article class="proyecto-card">
+      <img src="images/proyecto1.jpg" alt="Captura del proyecto [nombre]" class="proyecto-img">
+      <div class="proyecto-info">
+        <h3>Nombre del Proyecto</h3>
+        <p>Breve descripción de qué resuelve el proyecto y qué aprendiste haciéndolo.</p>
+        <ul class="proyecto-stack">
+          <li><i class="fa-brands fa-html5" aria-hidden="true"></i> HTML</li>
+          <li><i class="fa-brands fa-css3-alt" aria-hidden="true"></i> CSS</li>
+          <li><i class="fa-brands fa-js" aria-hidden="true"></i> JS</li>
+        </ul>
+        <div class="proyecto-links">
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn-proyecto">
+            <i class="fa-solid fa-eye" aria-hidden="true"></i> Ver Demo
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn-proyecto btn-proyecto-outline">
+            <i class="fa-brands fa-github" aria-hidden="true"></i> Código
+          </a>
+        </div>
+      </div>
+    </article>
+
+                           <!-- Segundo proyecto -->
+
+        <article class="proyecto-card">
+      <img src="images/proyecto1.jpg" alt="Captura del proyecto [nombre]" class="proyecto-img">
+      <div class="proyecto-info">
+        <h3>Nombre del Proyecto</h3>
+        <p>Breve descripción de qué resuelve el proyecto y qué aprendiste haciéndolo.</p>
+        <ul class="proyecto-stack">
+          <li><i class="fa-brands fa-html5" aria-hidden="true"></i> HTML</li>
+          <li><i class="fa-brands fa-css3-alt" aria-hidden="true"></i> CSS</li>
+          <li><i class="fa-brands fa-js" aria-hidden="true"></i> JS</li>
+        </ul>
+        <div class="proyecto-links">
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn-proyecto">
+            <i class="fa-solid fa-eye" aria-hidden="true"></i> Ver Demo
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn-proyecto btn-proyecto-outline">
+            <i class="fa-brands fa-github" aria-hidden="true"></i> Código
+          </a>
+        </div>
+      </div>
+    </article>
+
+                            <!-- Tercer proyecto -->
+
+        <article class="proyecto-card">
+      <img src="images/proyecto1.jpg" alt="Captura del proyecto [nombre]" class="proyecto-img">
+      <div class="proyecto-info">
+        <h3>Nombre del Proyecto</h3>
+        <p>Breve descripción de qué resuelve el proyecto y qué aprendiste haciéndolo.</p>
+        <ul class="proyecto-stack">
+          <li><i class="fa-brands fa-html5" aria-hidden="true"></i> HTML</li>
+          <li><i class="fa-brands fa-css3-alt" aria-hidden="true"></i> CSS</li>
+          <li><i class="fa-brands fa-js" aria-hidden="true"></i> JS</li>
+        </ul>
+        <div class="proyecto-links">
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn-proyecto">
+            <i class="fa-solid fa-eye" aria-hidden="true"></i> Ver Demo
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn-proyecto btn-proyecto-outline">
+            <i class="fa-brands fa-github" aria-hidden="true"></i> Código
+          </a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+  <a href="pages/proyectos.html" class="btn-ver-todos">Ver todos los proyectos →</a>
+
+                         <!-- Sección de habilidades y servicios -->
+
+             <article class="article_description">
+              
+              <h2 class="subtitle_principal">¿Que hago?</h2>
+                       
+        <h3> <span aria-hidden="true">💻 </span> Desarrollo Web</h3>
+      <p>Creación de páginas web modernas, adaptables a distintos dispositivos y enfocadas en una buena experiencia de usuario.</p>
+
+          <h3><span aria-hidden="true">🎨 </span> Diseño de Interfaces</h3>
+    <p> Desarrollo de interfaces limpias y atractivas utilizando HTML, CSS y herramientas de diseño.</p>
+    
+        <h3> <span aria-hidden="true">⚙️ </span>Programación</h3>
+    <p>Construcción de funcionalidades con JavaScript y tecnologías actuales para crear sitios dinámicos.</p>
+    
+        <h3> <span aria-hidden="true">🚀 </span> Optimización</h3>
+    <p>Mejora del rendimiento, estructura y accesibilidad de los proyectos web.</p>
+    
+    </article>
+
+        </section>
+
     </main>
 
+            <!-- Pie de página -->
+
     <footer class="footer_principal">
+
+       <h3>Redes Sociales</h3>
+
         <ul>
-            <h3>Redes Sociales</h3>
-            <li>Instagram: @daniloo22</li>
-            <li>Twitter: @daniloo22</li>
-            <li>Facebook: Daniloweb</li>
+            <li><a href="https://www.instagram.com/dani.aquino_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+            <li><a href="https://twitter.com/daniloo22" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i> Twitter</a></li>
+            <li><a href="https://www.facebook.com/daniloo22" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
         </ul>
-        <p>&copy; 2026 Danilo. Todos los derechos reservados.</p>
+
+        <p>&copy; 2026 Danilo Aquino. Todos los derechos reservados.</p>
+
     </footer>
     
 </div>

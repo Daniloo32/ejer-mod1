@@ -9,6 +9,7 @@
   padding: 3rem 1rem;
   perspective: 1200px;
   opacity: 0;
+  z-index: 1;
     }
 
   @keyframes aparecer {
@@ -56,6 +57,17 @@
   @include gradient(#c0c2c9, #232427);
   color: $colorPrimary;
   transform: rotateY(180deg);
+
+  a{
+    color: $colorPrimary;
+    text-decoration: none;
+    transition: transform 0.3s;
+    display: inline-block;
+
+    &:hover{
+      transform: scale(1.2);
+    }
+  }
 }
 @keyframes flotar {
   0%, 100% { transform: translateY(0); }
@@ -63,6 +75,7 @@
 }
 .tarjeta-front h3,
 .tarjeta-back h3 {
+  color: $colorPrimary;
   margin: 0.3rem 0;
   font-size: 1.4rem;
 }
@@ -97,6 +110,7 @@
   a {
   font-size: 1.5rem;
   text-decoration: none;
+  color: $colorPrimary;
   transition: transform 0.3s;
 
   &:hover{

@@ -14,8 +14,33 @@ footer{
     grid-area: footer;
 }
  .footer_principal{
-    @include flex(row, space-around, center);
-    list-style: none;
+    @include flex(column, space-between, start);
     margin-left: 0;
     padding-top: 10px;
+    
+li{
+    list-style: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 3px; }
+ p{
+    font-size: 0.8rem;
+    margin: auto;
+ }
+ i{
+    margin-right: 5px;
+ }
+ 
+a{
+    text-decoration: none;
+    color: $colorPrimary;
+    font-size: 0.8rem;
+    display: flex;
+    transition: transform 0.3s;
+
+    &:hover{
+        transform: scale(1.3);
     }
+ }
+
+}
