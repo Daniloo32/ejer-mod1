@@ -9,3 +9,48 @@
     list-style: none;
     padding: 4px;
 }
+
+/*  Formulario de contacto*/
+
+form {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    margin-top: 1rem;
+}
+
+form .form-label {
+    font-weight: 600;
+    color: #212529;
+    margin-bottom: 0.35rem;
+}
+
+form .form-control {
+    border: 1px solid #ced4da;
+    border-radius: 0.5rem;
+    padding: 0.6rem 0.9rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+form .form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+}
+
+form textarea.form-control {
+    resize: vertical;
+    min-height: 120px;
+}
+
+form .btn-primary {
+    padding: 0.6rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+form .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(13, 110, 253, 0.3);
+}
