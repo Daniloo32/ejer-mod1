@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preguntas Sobre Danilo</title>
+    <meta name="description" content="Conocé más sobre mí, mis gustos, intereses y personalidad a través de preguntas personales.">
+    <meta name="author" content="Danilo Aquino">
+    <title>Preguntas Personales | DaniloDev</title>
 
         <!-- Bootstrap CSS -->
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-..." crossorigin="anonymous">
           
             <!-- Libreria Animations -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -14,12 +16,15 @@
          <!-- CSS DONDE COMPILA SASS-->
     <link rel="stylesheet" href="../styles/estilos.css">
 
+        <!-- Iconify Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 <body>
 
 <div class="layout">
+                                         <!-- NAVBAR -->
          <header>
-
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
      <div class="container-fluid">
        <a class="navbar-brand" href="#">Preguntas Personales</a>
@@ -36,11 +41,8 @@
            </li>
            <li class="nav-item">
              <a class="nav-link" href="proyectos.html">Proyectos</a>
-           </li>
-            <li class="nav-item">
-             <a class="nav-link" href="servicios.html">Servicios</a>
-           </li>
-            <li class="nav-item">
+           </li> 
+                       <li class="nav-item">
              <a class="nav-link" href="sobre-mi.html">Sobre mí</a>
            </li>
          </ul>
@@ -48,31 +50,35 @@
      </div>
    </nav>
 
-    </header>
-
+  </header>
+                         <!-- BARRA LATERAL -->
             <aside class="sidebar">
+              <h3>Contacto</h3>
+<ul class="contact-list">
+  <li><span aria-hidden="true">📧</span> <a href="mailto:...">aquinodanilo00@gmail.com</a></li>
+  <li><span aria-hidden="true">📱</span> <a href="tel:+5491169410036">+54 11 6941-0036</a></li>
+  <li><span aria-hidden="true">🌐</span> <a href="https://miportafolio.com">www.miportafolio.com</a></li>
+</ul>
 
-  <h3>Contacto</h3>
-  <ul>
-    <li>📧 aquinodanilo00@gmail.com</li>
-    <li>📱 +54 11 6941-0036</li>
-    <li>🌐 www.miportafolio.com</li>
+       <div class="stack-tecnologico">
+  <h2 class="subtitle_principal">Mi Stack</h2>
+  <ul class="lista-iconos">
+    <li><i class="fa-brands fa-html5" aria-hidden="true"></i> HTML5</li>
+    <li><i class="fa-brands fa-css3-alt" aria-hidden="true"></i> CSS3</li>
+    <li><i class="fa-brands fa-js" aria-hidden="true"></i> JavaScript</li>
+    <li><i class="fa-brands fa-git-alt" aria-hidden="true"></i> Git</li>
+     <li><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</li>
   </ul>
-
-  <h3>Habilidades</h3>
-  <ul>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JavaScript</li>
-    <li>Git</li>
-  </ul>
+</div>
 </aside>
 
 
 
-    <!-- Preguntas Accordion-->
+                             <!-- Preguntas Accordion-->
 
     <main>
+     <h1>Más allá del código</h1>
+  <p class="lead">Un poco sobre mí, más allá de lo técnico.</p>
 
     <div class="accordion" id="accordionExample">
   <div class="accordion-item">
@@ -119,7 +125,7 @@
 </div>
 
 </main>
-
+                                  <!-- PIE DE PAGINA -->
       <footer>
         <p>&copy; 2026 Danilo. Todos los derechos reservados.</p>
     </footer>

@@ -2,12 +2,32 @@
 
 /* CONTACTO EDICION  */
 
-.redes_list-contacto li{
-    color: $colorPrimary;
-    font-family:  'Helvetica';
-    font-weight: bold;
-    list-style: none;
-    padding: 4px;
+/*  BARRA LATERAL */
+.contact-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    border: 1px solid var(--bs-border-color);
+    color: var(--bs-body-color);
+    text-decoration: none;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background-color: rgb(29, 29, 26);
+      border-color: rgb(29, 29, 26);
+      color: $colorPrimary;
+      transform: translateX(4px);
+    }
+  }
 }
 
 /*  Formulario de contacto*/
