@@ -40,3 +40,43 @@
       color: $colorSecondary;
     }
   }
+
+/*PAGINA PREGUNTAS ACCORDION*/
+
+main {
+.title-principal{
+  color: $colorPrimary;
+}
+/*IMG*/
+.foto-perfil-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+.foto-perfil {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #959596;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.lead{
+ color: $colorPrimary;
+}
+}
+.cita-personal {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: $colorPrimary;
+  border-left: 3px solid #c7c7c7;
+  padding-left: 1rem;
+  margin: 1.5rem 0 2rem;
+
+i {
+  font-size: 0.85rem;
+  opacity: 0.6;
+  margin: 0 0.3rem;
+}
+}
