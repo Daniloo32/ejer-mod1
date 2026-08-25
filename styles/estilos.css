@@ -146,6 +146,12 @@ main .lead {
   margin: 0 0.3rem;
 }
 
+/*SOBRE MI*/
+.section_description P {
+  text-align: justify;
+  line-height: 1.6;
+}
+
 /*TARJETA PRESENTACION*/
 .tarjeta-presentacion {
   display: flex;
