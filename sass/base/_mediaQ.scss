@@ -1,36 +1,62 @@
- @use "../utilities/mixins"as*;
- @use "../components/variables"as*;
+@use "../utilities/mixins" as *;
+@use "../components/variables" as *;
 
-/*  MEDIA QUERIES */
+/* MEDIA QUERIES - Mobile First */
 
-@media (min-width: 480px){
-    .layout {
+// Base = MOBILE (sin media query, es el punto de partida)
+.layout {
   @include grid(
-    1fr 1fr,
-    "header header"
-    "sidebar sidebar"
-    "main main"
-    "footer footer",
+    1fr,
+    "header"
+    "sidebar"
+    "main"
+    "footer",
     5px 10px,
   );
 }
+
+.nav_list {
+  flex-direction: column;
+  align-items: center;
 }
 
-@media (min-width: 480px){
-    .nav_list{
-        flex-direction:column;
-        align-items:center;
-    }
+// TABLET (768px en adelante): paso intermedio, ya en 2 columnas pero sidebar angosta
+@media (min-width: $bp-tablet) {
+  .layout {
+    @include grid(
+      0.35fr 1fr,
+      "header header"
+      "sidebar main"
+      "footer footer",
+      5px 10px,
+    );
+  }
+
+  .nav_list {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
-@media (min-width: 1024px){
-    .layout{
-          @include grid(
-    0.5fr 1fr,
-    "header header"
-    "sidebar main"
-    "footer footer",
-    5px 10px,
-  );
-    }
+// DESKTOP (1024px en adelante): layout final como en tu captura
+@media (min-width: $bp-desktop) {
+  .layout {
+    @include grid(
+      0.5fr 1fr,
+      "header header"
+      "sidebar main"
+      "footer footer",
+      5px 10px,
+    );
+  }
+}
+
+
+//FOTO PAGINA SOBRER MI
+@media (max-width: 768px) {
+  .foto-bio {
+    float: none;
+    margin: 0 auto 1rem;
+    display: block;
+  }
 }
