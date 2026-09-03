@@ -1,4 +1,14 @@
-# Mi sitio
+# Mi Proyecto
 
-Enlace directo al sitio publicado en GitHub Pages:
-https://github.com/Daniloo32/ejer-mod1
+Descripción de mi proyecto.
+
+## 🌐 Demo
+
+🚀 [Ver proyecto online](https://scintillating-melomakarona-cf9ead.netlify.app)
+
+## 🛠️ Tecnologías utilizadas
+
+- HTML
+- CSS
+- JavaScript
+- Sass
